@@ -1,0 +1,6 @@
+[submodule "external/linenoise"]
+	path = external/linenoise
+	url = https://github.com/antirez/linenoise.git
+[submodule "external/libdwarf"]
+	path = external/libdwarf
+	url = https://github.com/tomhughes/libdwarf.git

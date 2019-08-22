@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/zac/tdb/build",
+  "command": "gcc  -I/home/zac/tdb/tdb -I/home/zac/tdb/src -I/home/zac/tdb/external/linenoise -I/home/zac/tdb/external/libdwarf/libdwarf  -g -march=native -Wall -Wpedantic -Werror -Wextra -Wfloat-equal -Wshadow -Werror=return-type -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -g   -std=gnu11 -o CMakeFiles/tdb.dir/src/main.c.o   -c /home/zac/tdb/src/main.c",
+  "file": "/home/zac/tdb/src/main.c"
+},
+{
+  "directory": "/home/zac/tdb/build",
+  "command": "gcc  -I/home/zac/tdb/tdb -I/home/zac/tdb/src -I/home/zac/tdb/external/linenoise -I/home/zac/tdb/external/libdwarf/libdwarf  -g -march=native -Wall -Wpedantic -Werror -Wextra -Wfloat-equal -Wshadow -Werror=return-type -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -g   -std=gnu11 -o CMakeFiles/tdb.dir/src/tdb/breakpoint.c.o   -c /home/zac/tdb/src/tdb/breakpoint.c",
+  "file": "/home/zac/tdb/src/tdb/breakpoint.c"
+},
+{
+  "directory": "/home/zac/tdb/build",
+  "command": "gcc  -I/home/zac/tdb/tdb -I/home/zac/tdb/src -I/home/zac/tdb/external/linenoise -I/home/zac/tdb/external/libdwarf/libdwarf  -g -march=native -Wall -Wpedantic -Werror -Wextra -Wfloat-equal -Wshadow -Werror=return-type -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -g   -std=gnu11 -o CMakeFiles/tdb.dir/src/tdb/register.c.o   -c /home/zac/tdb/src/tdb/register.c",
+  "file": "/home/zac/tdb/src/tdb/register.c"
+},
+{
+  "directory": "/home/zac/tdb/build",
+  "command": "gcc  -I/home/zac/tdb/tdb -I/home/zac/tdb/src -I/home/zac/tdb/external/linenoise -I/home/zac/tdb/external/libdwarf/libdwarf  -g -march=native -Wall -Wpedantic -Werror -Wextra -Wfloat-equal -Wshadow -Werror=return-type -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -g   -std=gnu11 -o CMakeFiles/tdb.dir/src/tdb/tdb.c.o   -c /home/zac/tdb/src/tdb/tdb.c",
+  "file": "/home/zac/tdb/src/tdb/tdb.c"
+},
+{
+  "directory": "/home/zac/tdb/build",
+  "command": "gcc  -I/home/zac/tdb/tdb -I/home/zac/tdb/src -I/home/zac/tdb/external/linenoise -I/home/zac/tdb/external/libdwarf/libdwarf  -g -march=native -Wall -Wpedantic -Werror -Wextra -Wfloat-equal -Wshadow -Werror=return-type -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -g   -std=gnu11 -o CMakeFiles/tdb.dir/src/tdb/utility.c.o   -c /home/zac/tdb/src/tdb/utility.c",
+  "file": "/home/zac/tdb/src/tdb/utility.c"
+},
+{
+  "directory": "/home/zac/tdb/build",
+  "command": "gcc  -I/home/zac/tdb/tdb -I/home/zac/tdb/src -I/home/zac/tdb/external/linenoise -I/home/zac/tdb/external/libdwarf/libdwarf  -g -march=native -Wall -Wpedantic -Werror -Wextra -Wfloat-equal -Wshadow -Werror=return-type -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -g   -std=gnu11 -o CMakeFiles/tdb.dir/external/linenoise/linenoise.c.o   -c /home/zac/tdb/external/linenoise/linenoise.c",
+  "file": "/home/zac/tdb/external/linenoise/linenoise.c"
+}
+]

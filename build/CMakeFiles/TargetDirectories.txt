@@ -1,0 +1,3 @@
+/home/zac/tdb/build/CMakeFiles/rebuild_cache.dir
+/home/zac/tdb/build/CMakeFiles/tdb.dir
+/home/zac/tdb/build/CMakeFiles/edit_cache.dir

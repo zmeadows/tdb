@@ -1,0 +1,630 @@
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1a412/fast && /usr/bin/make -f CMakeFiles/cmTC_1a412.dir/build.make CMakeFiles/cmTC_1a412.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1a412.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_1a412.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1a412
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a412.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_1a412.dir/src.cxx.o  -o cmTC_1a412 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_42d93/fast && /usr/bin/make -f CMakeFiles/cmTC_42d93.dir/build.make CMakeFiles/cmTC_42d93.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_42d93.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_42d93.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_42d93
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42d93.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_42d93.dir/src.cxx.o  -o cmTC_42d93 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a8992/fast && /usr/bin/make -f CMakeFiles/cmTC_a8992.dir/build.make CMakeFiles/cmTC_a8992.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a8992.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_a8992.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a8992
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8992.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_a8992.dir/src.cxx.o  -o cmTC_a8992 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_71939/fast && /usr/bin/make -f CMakeFiles/cmTC_71939.dir/build.make CMakeFiles/cmTC_71939.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_71939.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_71939.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_71939
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71939.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_71939.dir/src.cxx.o  -o cmTC_71939 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dfac8/fast && /usr/bin/make -f CMakeFiles/cmTC_dfac8.dir/build.make CMakeFiles/cmTC_dfac8.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dfac8.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_dfac8.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_dfac8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfac8.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_dfac8.dir/src.cxx.o  -o cmTC_dfac8 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cb7d9/fast && /usr/bin/make -f CMakeFiles/cmTC_cb7d9.dir/build.make CMakeFiles/cmTC_cb7d9.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cb7d9.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_cb7d9.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cb7d9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb7d9.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_cb7d9.dir/src.cxx.o  -o cmTC_cb7d9 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c05c3/fast && /usr/bin/make -f CMakeFiles/cmTC_c05c3.dir/build.make CMakeFiles/cmTC_c05c3.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c05c3.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_c05c3.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c05c3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c05c3.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_c05c3.dir/src.cxx.o  -o cmTC_c05c3 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b262d/fast && /usr/bin/make -f CMakeFiles/cmTC_b262d.dir/build.make CMakeFiles/cmTC_b262d.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b262d.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_b262d.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b262d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b262d.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_b262d.dir/src.cxx.o  -o cmTC_b262d -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_290eb/fast && /usr/bin/make -f CMakeFiles/cmTC_290eb.dir/build.make CMakeFiles/cmTC_290eb.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_290eb.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_290eb.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_290eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_290eb.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_290eb.dir/src.cxx.o  -o cmTC_290eb -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5e440/fast && /usr/bin/make -f CMakeFiles/cmTC_5e440.dir/build.make CMakeFiles/cmTC_5e440.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5e440.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_5e440.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5e440
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e440.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_5e440.dir/src.cxx.o  -o cmTC_5e440 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9afbb/fast && /usr/bin/make -f CMakeFiles/cmTC_9afbb.dir/build.make CMakeFiles/cmTC_9afbb.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9afbb.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_9afbb.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9afbb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9afbb.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_9afbb.dir/src.cxx.o  -o cmTC_9afbb -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_64bb6/fast && /usr/bin/make -f CMakeFiles/cmTC_64bb6.dir/build.make CMakeFiles/cmTC_64bb6.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_64bb6.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_64bb6.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_64bb6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64bb6.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_64bb6.dir/src.cxx.o  -o cmTC_64bb6 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1c6ca/fast && /usr/bin/make -f CMakeFiles/cmTC_1c6ca.dir/build.make CMakeFiles/cmTC_1c6ca.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1c6ca.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_1c6ca.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1c6ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c6ca.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_1c6ca.dir/src.cxx.o  -o cmTC_1c6ca -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6f338/fast && /usr/bin/make -f CMakeFiles/cmTC_6f338.dir/build.make CMakeFiles/cmTC_6f338.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6f338.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_6f338.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6f338
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f338.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_6f338.dir/src.cxx.o  -o cmTC_6f338 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_40717/fast && /usr/bin/make -f CMakeFiles/cmTC_40717.dir/build.make CMakeFiles/cmTC_40717.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_40717.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_40717.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_40717
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40717.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_40717.dir/src.cxx.o  -o cmTC_40717 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_09db4/fast && /usr/bin/make -f CMakeFiles/cmTC_09db4.dir/build.make CMakeFiles/cmTC_09db4.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_09db4.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_09db4.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_09db4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09db4.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_09db4.dir/src.cxx.o  -o cmTC_09db4 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4702a/fast && /usr/bin/make -f CMakeFiles/cmTC_4702a.dir/build.make CMakeFiles/cmTC_4702a.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4702a.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_4702a.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4702a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4702a.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_4702a.dir/src.cxx.o  -o cmTC_4702a -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a364a/fast && /usr/bin/make -f CMakeFiles/cmTC_a364a.dir/build.make CMakeFiles/cmTC_a364a.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a364a.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_a364a.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a364a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a364a.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_a364a.dir/src.cxx.o  -o cmTC_a364a -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bcf30/fast && /usr/bin/make -f CMakeFiles/cmTC_bcf30.dir/build.make CMakeFiles/cmTC_bcf30.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bcf30.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_bcf30.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bcf30
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcf30.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_bcf30.dir/src.cxx.o  -o cmTC_bcf30 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8b8be/fast && /usr/bin/make -f CMakeFiles/cmTC_8b8be.dir/build.make CMakeFiles/cmTC_8b8be.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8b8be.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_8b8be.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8b8be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b8be.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_8b8be.dir/src.cxx.o  -o cmTC_8b8be -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_05625/fast && /usr/bin/make -f CMakeFiles/cmTC_05625.dir/build.make CMakeFiles/cmTC_05625.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_05625.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_05625.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_05625
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05625.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_05625.dir/src.cxx.o  -o cmTC_05625 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3ccb7/fast && /usr/bin/make -f CMakeFiles/cmTC_3ccb7.dir/build.make CMakeFiles/cmTC_3ccb7.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3ccb7.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_3ccb7.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3ccb7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ccb7.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_3ccb7.dir/src.cxx.o  -o cmTC_3ccb7 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_64a02/fast && /usr/bin/make -f CMakeFiles/cmTC_64a02.dir/build.make CMakeFiles/cmTC_64a02.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_64a02.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_64a02.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_64a02
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64a02.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_64a02.dir/src.cxx.o  -o cmTC_64a02 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4c1ec/fast && /usr/bin/make -f CMakeFiles/cmTC_4c1ec.dir/build.make CMakeFiles/cmTC_4c1ec.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4c1ec.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_4c1ec.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4c1ec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c1ec.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_4c1ec.dir/src.cxx.o  -o cmTC_4c1ec -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5849e/fast && /usr/bin/make -f CMakeFiles/cmTC_5849e.dir/build.make CMakeFiles/cmTC_5849e.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5849e.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_5849e.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5849e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5849e.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_5849e.dir/src.cxx.o  -o cmTC_5849e -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_64b6f/fast && /usr/bin/make -f CMakeFiles/cmTC_64b6f.dir/build.make CMakeFiles/cmTC_64b6f.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_64b6f.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_64b6f.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_64b6f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64b6f.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_64b6f.dir/src.cxx.o  -o cmTC_64b6f -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ee9f2/fast && /usr/bin/make -f CMakeFiles/cmTC_ee9f2.dir/build.make CMakeFiles/cmTC_ee9f2.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ee9f2.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_ee9f2.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ee9f2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee9f2.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_ee9f2.dir/src.cxx.o  -o cmTC_ee9f2 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4055d/fast && /usr/bin/make -f CMakeFiles/cmTC_4055d.dir/build.make CMakeFiles/cmTC_4055d.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4055d.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_4055d.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4055d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4055d.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_4055d.dir/src.cxx.o  -o cmTC_4055d -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_151ba/fast && /usr/bin/make -f CMakeFiles/cmTC_151ba.dir/build.make CMakeFiles/cmTC_151ba.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_151ba.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_151ba.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_151ba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_151ba.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_151ba.dir/src.cxx.o  -o cmTC_151ba -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
+Performing C++ SOURCE FILE Test ELF_GETSHDRSTRNDX succeeded with the following output:
+Change Dir: /home/zac/tdb/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8dc84/fast && /usr/bin/make -f CMakeFiles/cmTC_8dc84.dir/build.make CMakeFiles/cmTC_8dc84.dir/build
+make[1]: Entering directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8dc84.dir/src.cxx.o
+/usr/bin/clang++    -DELF_GETSHDRSTRNDX   -o CMakeFiles/cmTC_8dc84.dir/src.cxx.o -c /home/zac/tdb/bin/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8dc84
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8dc84.dir/link.txt --verbose=1
+/usr/bin/clang++   -DELF_GETSHDRSTRNDX    -rdynamic CMakeFiles/cmTC_8dc84.dir/src.cxx.o  -o cmTC_8dc84 -lelf 
+make[1]: Leaving directory '/home/zac/tdb/bin/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <libelf.h>
+int main() {
+  Elf *e = (Elf*)0;
+  size_t sz;
+  elf_getshdrstrndx(e, &sz);
+  return 0;
+}
