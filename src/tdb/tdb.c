@@ -5,6 +5,7 @@
 #include <string.h>
 #include <sys/ptrace.h>
 #include <sys/wait.h>
+#include <unistd.h>
 
 #include "linenoise.h"
 
@@ -36,6 +37,36 @@ void tdb_context_init(struct tdb_context* context, pid_t _pid, const char* _targ
     context->pid = _pid;
     strcpy(context->target_path, _target_path);
     context->breakpoint_count = 0;
+    context->stack_addr = 0;
+
+    {  // attempt to grab stack address from /proc/pid/maps file
+        msleep(250);
+
+        char maps_path[128];
+        sprintf(maps_path, "/proc/%d/maps", _pid);
+
+        FILE* maps_file;
+        if ((maps_file = fopen(maps_path, "r")) == NULL) {
+            printf("couldn't find maps file!\n");
+        }
+
+        char* line_buffer = NULL;
+        size_t line_buffer_size = 0;
+        ssize_t line_length;
+
+        while ((line_length = getline(&line_buffer, &line_buffer_size, maps_file)) != -1) {
+            if (strstr(line_buffer, "[stack]") != NULL) {
+                char* stack_addr_str = strtok(line_buffer, "-");
+                uint64_t stack_addr = strtoull(stack_addr_str, NULL, 16);
+                printf("stack address = 0x%zx\n", stack_addr);
+                context->stack_addr = stack_addr;
+                break;
+            }
+        }
+
+        free(line_buffer);
+        fclose(maps_file);
+    }  // finish grabbing stack address
 }
 
 void tdb_context_free(struct tdb_context* context)
@@ -45,11 +76,14 @@ void tdb_context_free(struct tdb_context* context)
     context->breakpoint_count = 0;
 }
 
-static void tdb_set_breakpoint_at_address(struct tdb_context* context, uintptr_t address)
+static void tdb_set_breakpoint_at_address(struct tdb_context* context, uintptr_t address_offset)
 {
+    const uintptr_t actual_address = context->stack_addr + address_offset;
+
     for (size_t i = 0; i < context->breakpoint_count; i++) {
-        if (context->breakpoints[i].pid == context->pid && context->breakpoints[i].address == address) {
-            fprintf(stderr, "breakpoint already exists at address %zx\n", address);
+        struct tdb_breakpoint* bp = &context->breakpoints[i];
+        if (bp->pid == context->pid && bp->address == actual_address) {
+            fprintf(stderr, "breakpoint already exists at address %zx\n", address_offset);
             return;
         }
     }
@@ -62,7 +96,7 @@ static void tdb_set_breakpoint_at_address(struct tdb_context* context, uintptr_t
     }
 
     struct tdb_breakpoint new_breakpoint;
-    tdb_breakpoint_init(&new_breakpoint, context->pid, address);
+    tdb_breakpoint_init(&new_breakpoint, context->pid, actual_address);
     bool success = tdb_breakpoint_enable(&new_breakpoint);
 
     if (success) {
@@ -70,7 +104,7 @@ static void tdb_set_breakpoint_at_address(struct tdb_context* context, uintptr_t
         context->breakpoint_count++;
     }
     else {
-        fprintf(stderr, "breakpoint not enabled at address %zx\n", address);
+        fprintf(stderr, "breakpoint not enabled at address %zx\n", address_offset);
     }
 }
 
@@ -109,7 +143,7 @@ static void tdb_wait_for_signal(struct tdb_context* context)
 static void tdb_step_over_breakpoint(struct tdb_context* context)
 {
     // if the breakpoint has been hit, the PC will now hold the address
-    // of the instruction immediately proceeding the breakpoint, so subtract 1.
+    // of the program instruction immediately after the breakpoint, so subtract 1.
     uint64_t maybe_breakpoint_addr = tdb_get_pc(context) - 1;
 
     for (size_t i = 0; i < context->breakpoint_count; i++) {
@@ -180,8 +214,8 @@ static void tdb_handle_memory_command(struct tdb_context* context, char** args, 
         return;
     }
 
-    uint64_t address = strtoull(args[1], NULL, 16);
-    if (address == 0) {
+    uint64_t address_offset = strtoull(args[1], NULL, 16);
+    if (address_offset == 0) {
         printf("Invalid address: %s\n", args[1]);
         return;
     }
@@ -193,9 +227,9 @@ static void tdb_handle_memory_command(struct tdb_context* context, char** args, 
         }
 
         bool read_success;
-        uint64_t data = tdb_read_memory(context->pid, address, &read_success);
+        uint64_t data = tdb_read_memory(context->pid, context->stack_addr + address_offset, &read_success);
         if (!read_success) {
-            printf("Failed to read memory at address: 0x%zx\n", address);
+            printf("Failed to read memory at address: 0x%zx\n", address_offset);
             return;
         }
         printf("0x%zx\n", data);
@@ -209,9 +243,9 @@ static void tdb_handle_memory_command(struct tdb_context* context, char** args, 
         uint64_t value = strtoull(args[2], NULL, 16);
 
         bool write_success;
-        tdb_write_memory(context->pid, address, value, &write_success);
+        tdb_write_memory(context->pid, context->stack_addr + address_offset, value, &write_success);
         if (!write_success) {
-            printf("Failed to write memory at address: 0x%zx\n", address);
+            printf("Failed to write memory at address: 0x%zx\n", address_offset);
             return;
         }
     }
@@ -224,7 +258,7 @@ static void tdb_handle_break_command(struct tdb_context* context, char** args, s
 {
     if (arg_count == 1) {
         uint64_t address = strtoull(args[0], NULL, 16);
-        debug_print("address given: %ld (%zx)\n", address, address);
+        debug_print("address given: %ld (0x%zx)\n", address, address);
         if (address != 0) {
             tdb_set_breakpoint_at_address(context, address);
         }

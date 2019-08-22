@@ -9,6 +9,7 @@ CMakeFiles/tdb.dir/src/main.c.o: ../src/tdb/register.h
 CMakeFiles/tdb.dir/src/main.c.o: ../src/main.c
 CMakeFiles/tdb.dir/src/main.c.o: ../src/tdb/tdb.h
 
+CMakeFiles/tdb.dir/src/tdb/breakpoint.c.o: ../src/tdb/utility.h
 CMakeFiles/tdb.dir/src/tdb/breakpoint.c.o: ../src/tdb/breakpoint.c
 CMakeFiles/tdb.dir/src/tdb/breakpoint.c.o: ../src/tdb/breakpoint.h
 

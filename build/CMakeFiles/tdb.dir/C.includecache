@@ -57,6 +57,8 @@ sys/ptrace.h
 -
 sys/wait.h
 -
+unistd.h
+-
 linenoise.h
 /home/zac/tdb/src/tdb/linenoise.h
 tdb/utility.h

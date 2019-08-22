@@ -28,6 +28,7 @@ int main(int argc, char** argv)
         execl(target_path, target_path, NULL);
     }
     else if (pid >= 1) {  // in parent process, execute debugger
+        printf("pid = %d\n", pid);
         struct tdb_context context;
         tdb_context_init(&context, pid, target_path);
         tdb_run(&context);

@@ -12,6 +12,7 @@
 struct tdb_context {
     pid_t pid;
     char target_path[PATH_MAX];
+    uint64_t stack_addr;
 
     struct tdb_breakpoint breakpoints[TDB_BREAKPOINTS_ALLOWED];
     size_t breakpoint_count;
