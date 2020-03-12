@@ -1,2 +1,2 @@
 nnoremap <leader>b :AsyncRun -cwd=/home/zac/tdb/ source build.sh<cr> :copen<cr> :wincmd p<cr>
-nnoremap <leader>r :vsplit term://cd /home/zac/tdb/bin/ && ./tdb /usr/bin/fire<cr>
+nnoremap <leader>r :vsplit term://cd /home/zac/tdb/bin/ && ./tdb /home/zac/tdb/test/test0<cr>

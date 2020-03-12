@@ -39,34 +39,34 @@ void tdb_context_init(struct tdb_context* context, pid_t _pid, const char* _targ
     context->breakpoint_count = 0;
     context->stack_addr = 0;
 
-    {  // attempt to grab stack address from /proc/pid/maps file
-        msleep(250);
+    // {  // attempt to grab stack address from /proc/pid/maps file
+    //     msleep(250);
 
-        char maps_path[128];
-        sprintf(maps_path, "/proc/%d/maps", _pid);
+    //     char maps_path[128];
+    //     sprintf(maps_path, "/proc/%d/maps", _pid);
 
-        FILE* maps_file;
-        if ((maps_file = fopen(maps_path, "r")) == NULL) {
-            printf("couldn't find maps file!\n");
-        }
+    //     FILE* maps_file;
+    //     if ((maps_file = fopen(maps_path, "r")) == NULL) {
+    //         printf("couldn't find maps file!\n");
+    //     }
 
-        char* line_buffer = NULL;
-        size_t line_buffer_size = 0;
-        ssize_t line_length;
+    //     char* line_buffer = NULL;
+    //     size_t line_buffer_size = 0;
+    //     ssize_t line_length;
 
-        while ((line_length = getline(&line_buffer, &line_buffer_size, maps_file)) != -1) {
-            if (strstr(line_buffer, "[stack]") != NULL) {
-                char* stack_addr_str = strtok(line_buffer, "-");
-                uint64_t stack_addr = strtoull(stack_addr_str, NULL, 16);
-                printf("stack address = 0x%zx\n", stack_addr);
-                context->stack_addr = stack_addr;
-                break;
-            }
-        }
+    //     while ((line_length = getline(&line_buffer, &line_buffer_size, maps_file)) != -1) {
+    //         if (strstr(line_buffer, "[stack]") != NULL) {
+    //             char* stack_addr_str = strtok(line_buffer, "-");
+    //             uint64_t stack_addr = strtoull(stack_addr_str, NULL, 16);
+    //             printf("stack address = 0x%zx\n", stack_addr);
+    //             context->stack_addr = stack_addr;
+    //             break;
+    //         }
+    //     }
 
-        free(line_buffer);
-        fclose(maps_file);
-    }  // finish grabbing stack address
+    //     free(line_buffer);
+    //     fclose(maps_file);
+    // }  // finish grabbing stack address
 }
 
 void tdb_context_free(struct tdb_context* context)
@@ -142,9 +142,11 @@ static void tdb_wait_for_signal(struct tdb_context* context)
 
 static void tdb_step_over_breakpoint(struct tdb_context* context)
 {
-    // if the breakpoint has been hit, the PC will now hold the address
+    // if the breakpoint has been hit, the program counter will now hold the address
     // of the program instruction immediately after the breakpoint, so subtract 1.
     uint64_t maybe_breakpoint_addr = tdb_get_pc(context) - 1;
+
+    printf("PC = 0x%zx\n", maybe_breakpoint_addr + 1);
 
     for (size_t i = 0; i < context->breakpoint_count; i++) {
         struct tdb_breakpoint* bp = &context->breakpoints[i];
@@ -324,7 +326,6 @@ static void tdb_handle_command(struct tdb_context* context, char* line)
     const char* MEMORY_CMDS[] = {"memory", "m", "mem"};
 
 #define __TDB_USER_COMMAND_IS_ONE_OF(X) is_one_of(command, X, sizeof(X) / sizeof(char*))
-
     // now dispatch on the main command
     if (__TDB_USER_COMMAND_IS_ONE_OF(CONTINUE_CMDS)) {
         tdb_handle_continue_command(context);
@@ -342,6 +343,7 @@ static void tdb_handle_command(struct tdb_context* context, char* line)
         // TODO: add 'help' command/message
         fprintf(stderr, "Unknown command\n");
     }
+#undef __TDB_USER_COMMAND_IS_ONE_OF
 
     free(args);
     free(line_copy);
